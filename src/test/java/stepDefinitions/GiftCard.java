@@ -10,6 +10,7 @@ import pages.GiftCardPage;
 import pages.HomePage;
 import pages.SearchResultPage;
 import utils.giftdata;
+import utils.screenshotfile;
 //screenshotfile.capture(driver, "AfterHover");
 import java.io.IOException;
 import java.util.HashMap;
@@ -83,7 +84,6 @@ public class GiftCard {
         String expectedMessage = giftdata.storeValues.get("expectedMessage");
         int index = Integer.parseInt(giftdata.storeValues.get("rowIndex"));
         String actualError = gp.getSenderEmailErrorMessage();
-
 
         String result;
         if (expectedMessage.equalsIgnoreCase("success")) {

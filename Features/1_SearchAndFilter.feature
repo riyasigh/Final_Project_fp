@@ -1,5 +1,5 @@
 Feature: Pepperfry Website Functionalities
-  Scenario:
+  Scenario: Search for Bookshelves and filter by price and brand
     Given the user opens the Pepperfry website
     And the user closes the popup if present
     When the user searches for "Bookshelves"

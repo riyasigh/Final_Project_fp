@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import utils.screenshotfile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,8 +60,9 @@ public class HomePage extends BasePage {
     public void hoverOverHomeDecor() {
         wait.until(ExpectedConditions.visibilityOf(HOME_DECOR_MENU));
         hover(HOME_DECOR_MENU);
-        pause(2000);
+        pause(1000);
         System.out.println("Hovered over Home Decor menu.");
+        screenshotfile.takeScreenshot(driver,"HomeDecorPage");
     }
 
     public List<String> getHomeDecorItems() {

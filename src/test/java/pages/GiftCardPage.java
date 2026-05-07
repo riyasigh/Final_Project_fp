@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import utils.screenshotfile;
 
 import java.security.PrivateKey;
 import java.util.List;
@@ -111,6 +112,7 @@ public class GiftCardPage extends BasePage{
     public String getSenderEmailErrorMessage(){
         try{
             shortWait.until(ExpectedConditions.visibilityOf(ERROR));
+            screenshotfile.takeScreenshot(driver,"EmailErrorPage");
             return ERROR.getText().trim();
         }catch(Exception e){
             return "";

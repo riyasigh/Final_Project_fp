@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import utils.screenshotfile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +88,7 @@ public class SearchResultPage extends BasePage {
 
     public void displayTopProducts(int count,int maxPrice){
         scrollBy(0,300);
+        screenshotfile.takeScreenshot(driver,"SearchItemsPage");
 
         List<String[]> products=new ArrayList<>();
         System.out.println("\n===============================================");

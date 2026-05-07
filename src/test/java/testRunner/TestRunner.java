@@ -11,7 +11,13 @@ import org.junit.runner.RunWith;
                 ".//Features/2_HomeDecorList.feature",
                 ".//Features/3_GiftCard.feature"
         },
-        glue = "stepDefinitions"
+        glue = "stepDefinitions",
+        plugin={
+                "pretty","html:reports/myreport.html",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        },
+        dryRun=false,
+        monochrome = true
 )
 
 public class TestRunner {

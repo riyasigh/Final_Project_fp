@@ -28,7 +28,6 @@ public class HomeDecorList {
     @When("the user hovers over the Home Decor menu")
     public void the_user_hovers_over_the_home_decor_menu() {
         hp.hoverOverHomeDecor();
-        screenshotfile.takeScreenshot(driver,"HomeDecorPage");
     }
 
     @Then("the Home Decor menu items should be captured and printed")
